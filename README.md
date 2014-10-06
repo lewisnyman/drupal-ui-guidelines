@@ -9,9 +9,9 @@ static set of html pages to display them.
 
     npm install
 
-2. Clone a copy of the drupal 8 branch in your directory:
+2. Clone a copy of the drupal 8 branch in your directory (for now, there is a test repo):
 
-    git clone --branch 8.0.x http://git.drupal.org/project/drupal.git
+    git clone lewisnyman@git.drupal.org:sandbox/lewisnyman/2351493.git
 
 3. Clone a copy of the static html files in your directory:
 
