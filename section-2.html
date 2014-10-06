@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Drupal UI guidelines</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../../../assets/vendor/normalize-css/normalize.css">
+  <link rel="stylesheet" href="../css/base/elements.css">
+  <link rel="stylesheet" href="../css/components/buttons.css">
+  <link rel="stylesheet" href="../css/components/form.css">
+  <link rel="stylesheet" href="../css/components/tables.css">
+  <link rel="stylesheet" href="../css/components/dropbutton.component.css">
+  <script src="../../../assets/vendor/domready/ready.min.js"></script>
+  <script src="../../../assets/vendor/jquery/jquery.js"></script>
+  <script src="../../../assets/vendor/jquery-once/jquery.once.js"></script>
+  <script src="../../../misc/drupal.js"></script>
+  <script src="../../../misc/dropbutton/dropbutton.js"></script>
+  <script src="../../../assets/vendor/modernizr/modernizr.js"></script>
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <h1>Drupal UI guidelines</h1>
+  </header>
+  <aside>
+    <nav><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">Generic elements</a></li>
+      <li><a href="section-2.html">Tables</a></li>
+      <li><a href="section-3.html">Form inputs</a></li>
+      <li><a href="section-6.html">Buttons</a></li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+      <section class="kss-depth-1">
+
+      <h1 class="kss-title">Tables</h1>
+
+        <div class="kss-box"><p>Use tables when provising an overview of large amounts of structured data.</p>
+<h3 id="recommendations">Recommendations</h3>
+<h4 id="colummns">Colummns</h4>
+<ul>
+<li>First column: Object name or identifier.</li>
+<li>Last column: Operations (if applicable).</li>
+<li>Use distinct column names.</li>
+<li>Limit the number of columns to 5.</li>
+<li>Avoid columns in which the content of almost all rows is the same.</li>
+<li>Avoid column with similar data. e.g. &quot;Category&quot; and &quot;Section&quot;.</li>
+</ul>
+<h4 id="rows">Rows</h4>
+<ul>
+<li>Provide a pager when more than 50 rows can be expected. Except when the table has dragable rows.</li>
+<li>Provide a data filter when more than 2 pages of data can be are expected.</li>
+</ul>
+<h4 id="operations">Operations</h4>
+<ul>
+<li>First operation: &quot;Edit&quot;.</li>
+<li>Last operation: &quot;Delete&quot;.</li>
+<li>Use distinct operation labels. e.g. not: &quot;Clone&quot; and &quot;Copy&quot;.</li>
+<li>Limit the number of operators to 4.</li>
+</ul>
+</div>
+
+          <div class="kss-mod-example">
+            <div><table>
+  <thead>
+    <tr>
+      <th>
+        <input type="checkbox">
+      </th>
+      <th>
+        <a class="heading-d table-header table-header--sorting" href="#" title="Sort by username">Username</a>
+      </th>
+      <th class="col-priority-medium">
+        <a class="heading-d table-header table-header--sorting" href="#" title="Sort by status">Status</a>
+      </th>
+      <th class="col-priority-medium">
+        <span class="heading-d table-header" href="#">Roles</span>
+      </th>
+      <th class="table-priority-low">
+        <a class="heading-d table-header table-header--sorting is-active" href="#" title="Sort by membership duration">Member for</a>
+      </th>
+      <th>
+        <span class="heading-d table-header" href="#">Operations</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><a href="#">ry5n</a></td>
+      <td class="col-priority-medium">Active</td>
+      <td class="col-priority-medium">Administrator</td>
+      <td class="table-priority-low">6 months, 1 week</td>
+      <td>
+        <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropbutton"><li class="edit-node"><a href="/node/1/edit?destination=admin/content">Edit</a></li><li class="delete-node"><a href="/node/1/delete?destination=admin/content">Delete</a></li></ul></div></div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><a href="#">test</a></td>
+      <td class="col-priority-medium">Active</td>
+      <td class="col-priority-medium">Tester</td>
+      <td class="table-priority-low">3 months, 3 weeks</td>
+      <td>
+        <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropbutton"><li class="edit-node"><a href="/node/1/edit?destination=admin/content">Edit</a></li><li class="delete-node"><a href="/node/1/delete?destination=admin/content">Delete</a></li></ul></div></div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><a href="#">test2</a></td>
+      <td class="col-priority-medium">Active</td>
+      <td class="col-priority-medium">Tester</td>
+      <td class="table-priority-low">2 months, 1 week</td>
+      <td>
+        <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropbutton"><li class="edit-node"><a href="/node/1/edit?destination=admin/content">Edit</a></li><li class="delete-node"><a href="/node/1/delete?destination=admin/content">Delete</a></li></ul></div></div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><a href="#">test3</a></td>
+      <td class="col-priority-medium">Active</td>
+      <td class="col-priority-medium">Tester</td>
+      <td class="table-priority-low">3 weeks, 4 days</td>
+      <td>
+        <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropbutton"><li class="edit-node"><a href="/node/1/edit?destination=admin/content">Edit</a></li><li class="delete-node"><a href="/node/1/delete?destination=admin/content">Delete</a></li></ul></div></div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><a href="#">test4</a></td>
+      <td class="col-priority-medium">Active</td>
+      <td class="col-priority-medium">Tester</td>
+      <td class="table-priority-low">6 weeks</td>
+      <td>
+        <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropbutton"><li class="edit-node"><a href="/node/1/edit?destination=admin/content">Edit</a></li><li class="delete-node"><a href="/node/1/delete?destination=admin/content">Delete</a></li></ul></div></div>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+          </div>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;
+        &lt;input type=&quot;checkbox&quot;&gt;
+      &lt;/th&gt;
+      &lt;th&gt;
+        &lt;a class=&quot;heading-d table-header table-header--sorting&quot; href=&quot;#&quot; title=&quot;Sort by username&quot;&gt;Username&lt;/a&gt;
+      &lt;/th&gt;
+      &lt;th class=&quot;col-priority-medium&quot;&gt;
+        &lt;a class=&quot;heading-d table-header table-header--sorting&quot; href=&quot;#&quot; title=&quot;Sort by status&quot;&gt;Status&lt;/a&gt;
+      &lt;/th&gt;
+      &lt;th class=&quot;col-priority-medium&quot;&gt;
+        &lt;span class=&quot;heading-d table-header&quot; href=&quot;#&quot;&gt;Roles&lt;/span&gt;
+      &lt;/th&gt;
+      &lt;th class=&quot;table-priority-low&quot;&gt;
+        &lt;a class=&quot;heading-d table-header table-header--sorting is-active&quot; href=&quot;#&quot; title=&quot;Sort by membership duration&quot;&gt;Member for&lt;/a&gt;
+      &lt;/th&gt;
+      &lt;th&gt;
+        &lt;span class=&quot;heading-d table-header&quot; href=&quot;#&quot;&gt;Operations&lt;/span&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;ry5n&lt;/a&gt;&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Active&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Administrator&lt;/td&gt;
+      &lt;td class=&quot;table-priority-low&quot;&gt;6 months, 1 week&lt;/td&gt;
+      &lt;td&gt;
+        &lt;div class=&quot;dropbutton-wrapper&quot;&gt;&lt;div class=&quot;dropbutton-widget&quot;&gt;&lt;ul class=&quot;dropbutton&quot;&gt;&lt;li class=&quot;edit-node&quot;&gt;&lt;a href=&quot;/node/1/edit?destination=admin/content&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;delete-node&quot;&gt;&lt;a href=&quot;/node/1/delete?destination=admin/content&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;test&lt;/a&gt;&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Active&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Tester&lt;/td&gt;
+      &lt;td class=&quot;table-priority-low&quot;&gt;3 months, 3 weeks&lt;/td&gt;
+      &lt;td&gt;
+        &lt;div class=&quot;dropbutton-wrapper&quot;&gt;&lt;div class=&quot;dropbutton-widget&quot;&gt;&lt;ul class=&quot;dropbutton&quot;&gt;&lt;li class=&quot;edit-node&quot;&gt;&lt;a href=&quot;/node/1/edit?destination=admin/content&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;delete-node&quot;&gt;&lt;a href=&quot;/node/1/delete?destination=admin/content&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;test2&lt;/a&gt;&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Active&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Tester&lt;/td&gt;
+      &lt;td class=&quot;table-priority-low&quot;&gt;2 months, 1 week&lt;/td&gt;
+      &lt;td&gt;
+        &lt;div class=&quot;dropbutton-wrapper&quot;&gt;&lt;div class=&quot;dropbutton-widget&quot;&gt;&lt;ul class=&quot;dropbutton&quot;&gt;&lt;li class=&quot;edit-node&quot;&gt;&lt;a href=&quot;/node/1/edit?destination=admin/content&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;delete-node&quot;&gt;&lt;a href=&quot;/node/1/delete?destination=admin/content&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;test3&lt;/a&gt;&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Active&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Tester&lt;/td&gt;
+      &lt;td class=&quot;table-priority-low&quot;&gt;3 weeks, 4 days&lt;/td&gt;
+      &lt;td&gt;
+        &lt;div class=&quot;dropbutton-wrapper&quot;&gt;&lt;div class=&quot;dropbutton-widget&quot;&gt;&lt;ul class=&quot;dropbutton&quot;&gt;&lt;li class=&quot;edit-node&quot;&gt;&lt;a href=&quot;/node/1/edit?destination=admin/content&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;delete-node&quot;&gt;&lt;a href=&quot;/node/1/delete?destination=admin/content&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;test4&lt;/a&gt;&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Active&lt;/td&gt;
+      &lt;td class=&quot;col-priority-medium&quot;&gt;Tester&lt;/td&gt;
+      &lt;td class=&quot;table-priority-low&quot;&gt;6 weeks&lt;/td&gt;
+      &lt;td&gt;
+        &lt;div class=&quot;dropbutton-wrapper&quot;&gt;&lt;div class=&quot;dropbutton-widget&quot;&gt;&lt;ul class=&quot;dropbutton&quot;&gt;&lt;li class=&quot;edit-node&quot;&gt;&lt;a href=&quot;/node/1/edit?destination=admin/content&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;delete-node&quot;&gt;&lt;a href=&quot;/node/1/delete?destination=admin/content&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+        </div>
+
+      </section>
+  </article>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    // Ensure code blocks are highlighted properly...
+    jQuery('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+</div></body>
+</html>

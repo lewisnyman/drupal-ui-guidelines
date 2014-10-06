@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Drupal UI guidelines</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../../../assets/vendor/normalize-css/normalize.css">
+  <link rel="stylesheet" href="../css/base/elements.css">
+  <link rel="stylesheet" href="../css/components/buttons.css">
+  <link rel="stylesheet" href="../css/components/form.css">
+  <link rel="stylesheet" href="../css/components/tables.css">
+  <link rel="stylesheet" href="../css/components/dropbutton.component.css">
+  <script src="../../../assets/vendor/domready/ready.min.js"></script>
+  <script src="../../../assets/vendor/jquery/jquery.js"></script>
+  <script src="../../../assets/vendor/jquery-once/jquery.once.js"></script>
+  <script src="../../../misc/drupal.js"></script>
+  <script src="../../../misc/dropbutton/dropbutton.js"></script>
+  <script src="../../../assets/vendor/modernizr/modernizr.js"></script>
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <h1>Drupal UI guidelines</h1>
+  </header>
+  <aside>
+    <nav><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">Generic elements</a></li>
+      <li><a href="section-2.html">Tables</a></li>
+      <li><a href="section-3.html">Form inputs</a></li>
+      <li><a href="section-6.html">Buttons</a></li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+      <section class="kss-depth-1">
+
+      <h1 class="kss-title">Form inputs</h1>
+
+        <div class="kss-box"><p>A form element is any item within a form used to collect data from a user. Most commonly it consists of a title, an input field, a description, and possibly a prefix, a suffix, or both.</p>
+</div>
+
+
+      </section>
+      <section class="kss-depth-2">
+
+      <h2 class="kss-title">Default Form elements</h2>
+
+        <div class="kss-box"><p>The title of a form element should be a simple and complete word or phrase which describes the form element. Only the first character of the first word should be capitalized (unless a proper noun or acronym is used). There should be no ending punctuation except for the ending colon.</p>
+</div>
+
+          <div class="kss-mod-example">
+            <div><div class="form-item">
+<label>Text</label>
+<input type="text" class="input-text" />
+</div>
+<div class="form-item">
+<label>Textarea</label>
+<textarea class="form-textarea"></textarea>
+</div></div>
+          </div>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;form-item&quot;&gt;
+&lt;label&gt;Text&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input-text&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-item&quot;&gt;
+&lt;label&gt;Textarea&lt;/label&gt;
+&lt;textarea class=&quot;form-textarea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <h2 class="kss-title">Disabled form items</h2>
+
+
+          <div class="kss-mod-example">
+            <div><div class="form-disabled">
+<label>Title</label>
+<input type="text" class="input-text">
+</div></div>
+          </div>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;form-disabled&quot;&gt;
+&lt;label&gt;Title&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input-text&quot;&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <h2 class="kss-title">Errored form items</h2>
+
+
+          <div class="kss-mod-example">
+            <div><div class="form-item">
+<label class="error form-required">Title</label>
+<input type="text" class="input-text error">
+</div></div>
+          </div>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;form-item&quot;&gt;
+&lt;label class=&quot;error form-required&quot;&gt;Title&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;input-text error&quot;&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <h2 class="kss-title">Select elements</h2>
+
+        <div class="kss-box"><p>Select elements are styled in Webkit only.</p>
+</div>
+
+          <div class="kss-mod-example">
+            <div><select>
+<option value="1">Option 1</option>
+<option value="2">Option 2</option>
+<option value="3">Option 3</option>
+</select></div>
+          </div>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;select&gt;
+&lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;</pre>
+        </div>
+
+      </section>
+  </article>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    // Ensure code blocks are highlighted properly...
+    jQuery('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+</div></body>
+</html>
