@@ -5,7 +5,7 @@ static set of html pages to display them.
 
 ## Instructions
 
-1. Navigate to your folder in your terminal and install the node dependancies:
+1. Navigate to your folder in your terminal and install the node dependencies:
 
     npm install
 
