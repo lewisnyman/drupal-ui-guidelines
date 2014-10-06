@@ -19,7 +19,7 @@ static set of html pages to display them.
 
 4. Build the latest version of the guidelines:
 
-    kss-node drupal/themes/seven/css pages --template styleguide-template
+    kss-node drupal/core/themes/seven/css pages --template styleguide-template
 
 ## Working on the guidelines
 
