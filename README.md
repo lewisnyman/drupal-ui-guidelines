@@ -5,7 +5,7 @@ static set of html pages to display them.
 
 ## Instructions
 
-1. Navigate to your folder in your terminal and install the node dependancies:
+1. Navigate to your folder in your terminal and install the node dependencies:
 
     npm install
 
@@ -19,7 +19,7 @@ static set of html pages to display them.
 
 4. Build the latest version of the guidelines:
 
-    kss-node css pages --template styleguide-template
+    kss-node core/themes/seven/css pages --template styleguide-template
 
 ## Working on the guidelines
 
