@@ -1,0 +1,16 @@
+{
+  "name": "drupal-ui-guidelines",
+  "version": "0.0.0",
+  "description": "Drupal UI guidelines'",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "kss": ">=1.0.1"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
