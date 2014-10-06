@@ -11,7 +11,7 @@ static set of html pages to display them.
 
 2. Clone a copy of the drupal 8 branch in your directory (for now, there is a test repo):
 
-    git clone lewisnyman@git.drupal.org:sandbox/lewisnyman/2351493.git
+    git clone lewisnyman@git.drupal.org:sandbox/lewisnyman/2351493.git drupal
 
 3. Clone a copy of the static html files in your directory:
 
